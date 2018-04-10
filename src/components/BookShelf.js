@@ -1,5 +1,5 @@
 import React from "react";
-import { PropType } from "prop-types";
+import { PropTypes } from "prop-types";
 import Book from "./Book";
 
 const BookShelf = ({ name }) => (
@@ -19,7 +19,7 @@ const BookShelf = ({ name }) => (
 );
 
 BookShelf.propTypes = {
-  name: PropType.string.isRequired
+  name: PropTypes.string.isRequired
 };
 
 export default BookShelf;
