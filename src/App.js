@@ -15,14 +15,17 @@ class BooksApp extends Component {
       this.setState(() => ({
         books
       }));
-      console.log(books);
     });
   }
 
   render() {
     return (
       <div className="app">
-        <Route exact path="/" component={ListShelves} />
+        <Route
+          exact
+          path="/"
+          render={() => <ListShelves books={this.state.books} />}
+        />
         <Route exact path="/search" component={SearchBooks} />
       </div>
     );

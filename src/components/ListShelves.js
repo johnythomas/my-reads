@@ -1,17 +1,38 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { PropTypes } from "prop-types";
 import BookShelf from "./BookShelf";
+import { filterBook } from "../BooksUtil";
 
-const ListShelves = () => (
+const bookShelves = [
+  {
+    name: "currentlyReading",
+    displayName: "Currently Reading"
+  },
+  {
+    name: "wantToRead",
+    displayName: "Want to Read"
+  },
+  {
+    name: "read",
+    displayName: "Read"
+  }
+];
+
+const ListShelves = ({ books }) => (
   <div className="list-books">
     <div className="list-books-title">
       <h1>MyReads</h1>
     </div>
     <div className="list-books-content">
       <div>
-        <BookShelf name="Currently Reading" />
-        <BookShelf name="Want to Read" />
-        <BookShelf name="Read" />
+        {bookShelves.map(shelf => (
+          <BookShelf
+            key={shelf.name}
+            name={shelf.displayName}
+            books={filterBook(books, shelf.name)}
+          />
+        ))}
       </div>
     </div>
     <div className="open-search">
@@ -19,5 +40,18 @@ const ListShelves = () => (
     </div>
   </div>
 );
+
+ListShelves.propTypes = {
+  books: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      authors: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+      imageLinks: PropTypes.shape({
+        thumbnail: PropTypes.string.isRequired,
+        smallThumbnail: PropTypes.string.isRequired
+      }).isRequired
+    }).isRequired
+  ).isRequired
+};
 
 export default ListShelves;
