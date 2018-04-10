@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const ListBooks = ({ history }) => (
+const ListBooks = () => (
   <div className="list-books">
     <div className="list-books-title">
       <h1>MyReads</h1>
@@ -243,7 +244,7 @@ const ListBooks = ({ history }) => (
       </div>
     </div>
     <div className="open-search">
-      <a onClick={() => history.push("/search")}>Add a book</a>
+      <Link to="/search">Add a book</Link>
     </div>
   </div>
 );
