@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ListBooks = () => (
+const ListShelves = () => (
   <div className="list-books">
     <div className="list-books-title">
       <h1>MyReads</h1>
@@ -249,4 +249,4 @@ const ListBooks = () => (
   </div>
 );
 
-export default ListBooks;
+export default ListShelves;
