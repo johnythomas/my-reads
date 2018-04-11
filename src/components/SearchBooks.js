@@ -22,10 +22,20 @@ class SearchBooks extends Component {
     }
     BookAPI.search(query.trim()).then(books => {
       this.setState(() => ({
-        searchedBooks: !books || books.error === "empty query" ? [] : books
+        searchedBooks:
+          !books || books.error === "empty query"
+            ? []
+            : this.mergeSearchResultWithBooks(books)
       }));
     });
   };
+
+  mergeSearchResultWithBooks = searchResults =>
+    searchResults.map(res => {
+      const book = this.props.books.find(bk => res.id === bk.id);
+      if (book) res.shelf = book.shelf;
+      return res;
+    });
 
   render() {
     return (
@@ -58,7 +68,17 @@ class SearchBooks extends Component {
 }
 
 SearchBooks.propTypes = {
-  onUpdateShelf: PropTypes.func.isRequired
+  onUpdateShelf: PropTypes.func.isRequired,
+  books: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      authors: PropTypes.arrayOf(PropTypes.string),
+      imageLinks: PropTypes.shape({
+        thumbnail: PropTypes.string.isRequired,
+        smallThumbnail: PropTypes.string.isRequired
+      }).isRequired
+    }).isRequired
+  ).isRequired
 };
 
 export default SearchBooks;
