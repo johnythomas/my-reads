@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { PropTypes } from "prop-types";
 import BookShelf from "./BookShelf";
-import { filterBook } from "../BooksUtil";
+import filterBook from "../BooksUtil";
 
 const bookShelves = [
   {
