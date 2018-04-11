@@ -2,14 +2,14 @@ import React from "react";
 import { PropTypes } from "prop-types";
 import Book from "./Book";
 
-const BookShelf = ({ name, books }) => (
+const BookShelf = ({ name, books, onUpdateShelf }) => (
   <div className="bookshelf">
     <h2 className="bookshelf-title">{name}</h2>
     <div className="bookshelf-books">
       <ol className="books-grid">
         {books.map(book => (
           <li key={book.id}>
-            <Book book={book} />
+            <Book book={book} onUpdateShelf={onUpdateShelf} />
           </li>
         ))}
       </ol>
@@ -28,7 +28,8 @@ BookShelf.propTypes = {
         smallThumbnail: PropTypes.string.isRequired
       }).isRequired
     }).isRequired
-  ).isRequired
+  ).isRequired,
+  onUpdateShelf: PropTypes.func.isRequired
 };
 
 export default BookShelf;
