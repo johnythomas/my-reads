@@ -172,3 +172,8 @@ body, .app {
   text-align: center;
   font-size: 0.8em;
 }
+
+.message {
+  font-size: 1em;
+  color: #999;
+}

@@ -7,11 +7,15 @@ const BookShelf = ({ name, books, onUpdateShelf }) => (
     <h2 className="bookshelf-title">{name}</h2>
     <div className="bookshelf-books">
       <ol className="books-grid">
-        {books.map(book => (
-          <li key={book.id}>
-            <Book book={book} onUpdateShelf={onUpdateShelf} />
-          </li>
-        ))}
+        {books.length !== 0 ? (
+          books.map(book => (
+            <li key={book.id}>
+              <Book book={book} onUpdateShelf={onUpdateShelf} />
+            </li>
+          ))
+        ) : (
+          <li className="message">There are no books in this shelf</li>
+        )}
       </ol>
     </div>
   </div>
