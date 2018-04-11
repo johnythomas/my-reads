@@ -14,7 +14,7 @@ const Book = ({ book, onUpdateShelf }) => (
       />
       <div className="book-shelf-changer">
         <select
-          defaultValue={book.shelf}
+          defaultValue={book.shelf || "none"}
           onChange={e => onUpdateShelf(book, e.target.value)}
         >
           <option value="none" disabled>
@@ -23,19 +23,19 @@ const Book = ({ book, onUpdateShelf }) => (
           <option value="currentlyReading">Currently Reading</option>
           <option value="wantToRead">Want to Read</option>
           <option value="read">Read</option>
-          <option value="none">None</option>
         </select>
       </div>
     </div>
     <div className="book-title">{book.title}</div>
-    <div className="book-authors">{book.authors.join()}</div>
+    <div className="book-authors">{book.authors && book.authors.join()}</div>
   </div>
 );
 
 Book.propTypes = {
   book: PropTypes.shape({
     title: PropTypes.string.isRequired,
-    authors: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+    authors: PropTypes.arrayOf(PropTypes.string),
+    shelf: PropTypes.string,
     imageLinks: PropTypes.shape({
       thumbnail: PropTypes.string.isRequired,
       smallThumbnail: PropTypes.string.isRequired

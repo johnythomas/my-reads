@@ -1,28 +1,64 @@
-import React from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { PropTypes } from "prop-types";
+import * as BookAPI from "../BooksAPI";
+import Book from "./Book";
 
-const SearchBooks = () => (
-  <div className="search-books">
-    <div className="search-books-bar">
-      <Link to="/" className="close-search">
-        Close
-      </Link>
-      <div className="search-books-input-wrapper">
-        {/*
-                  NOTES: The search from BooksAPI is limited to a particular set of search terms.
-                  You can find these search terms here:
-                  https://github.com/udacity/reactnd-project-myreads-starter/blob/master/SEARCH_TERMS.md
+class SearchBooks extends Component {
+  state = {
+    query: "",
+    searchedBooks: []
+  };
 
-                  However, remember that the BooksAPI.search method DOES search by title or author. So, don't worry if
-                  you don't find a specific author or title. Every search is limited by search terms.
-                */}
-        <input type="text" placeholder="Search by title or author" />
+  updateQuery = query => {
+    this.setState(() => ({
+      query: query.trim()
+    }));
+    if (!query || !query.trim()) {
+      this.setState(() => ({
+        searchedBooks: []
+      }));
+      return;
+    }
+    BookAPI.search(query.trim()).then(books => {
+      this.setState(() => ({
+        searchedBooks: !books || books.error === "empty query" ? [] : books
+      }));
+    });
+  };
+
+  render() {
+    return (
+      <div className="search-books">
+        <div className="search-books-bar">
+          <Link to="/" className="close-search">
+            Close
+          </Link>
+          <div className="search-books-input-wrapper">
+            <input
+              type="text"
+              placeholder="Search by title or author"
+              value={this.state.query}
+              onChange={e => this.updateQuery(e.target.value)}
+            />
+          </div>
+        </div>
+        <div className="search-books-results">
+          <ol className="books-grid">
+            {this.state.searchedBooks.map(book => (
+              <li key={book.id}>
+                <Book book={book} onUpdateShelf={this.props.onUpdateShelf} />
+              </li>
+            ))}
+          </ol>
+        </div>
       </div>
-    </div>
-    <div className="search-books-results">
-      <ol className="books-grid" />
-    </div>
-  </div>
-);
+    );
+  }
+}
+
+SearchBooks.propTypes = {
+  onUpdateShelf: PropTypes.func.isRequired
+};
 
 export default SearchBooks;
