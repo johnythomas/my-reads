@@ -19,12 +19,13 @@ const Book = ({ book, onUpdateShelf }) => (
           defaultValue={book.shelf || "none"}
           onChange={e => onUpdateShelf(book, e.target.value)}
         >
-          <option value="none" disabled>
+          <option value="moveTo" disabled>
             Move to...
           </option>
           <option value="currentlyReading">Currently Reading</option>
           <option value="wantToRead">Want to Read</option>
           <option value="read">Read</option>
+          <option value="none">None</option>
         </select>
       </div>
     </div>
