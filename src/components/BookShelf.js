@@ -25,12 +25,14 @@ BookShelf.propTypes = {
   name: PropTypes.string.isRequired,
   books: PropTypes.arrayOf(
     PropTypes.shape({
+      id: PropTypes.string.isRequired,
       title: PropTypes.string.isRequired,
       authors: PropTypes.arrayOf(PropTypes.string),
+      shelf: PropTypes.string,
       imageLinks: PropTypes.shape({
-        thumbnail: PropTypes.string.isRequired,
-        smallThumbnail: PropTypes.string.isRequired
-      }).isRequired
+        thumbnail: PropTypes.string,
+        smallThumbnail: PropTypes.string
+      })
     }).isRequired
   ).isRequired,
   onUpdateShelf: PropTypes.func.isRequired

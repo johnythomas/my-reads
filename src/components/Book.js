@@ -9,7 +9,9 @@ const Book = ({ book, onUpdateShelf }) => (
         style={{
           width: 128,
           height: 193,
-          backgroundImage: `url("${book.imageLinks.smallThumbnail}")`
+          backgroundImage: `url("${
+            book.imageLinks ? book.imageLinks.smallThumbnail : ""
+          }")`
         }}
       />
       <div className="book-shelf-changer">
@@ -33,13 +35,14 @@ const Book = ({ book, onUpdateShelf }) => (
 
 Book.propTypes = {
   book: PropTypes.shape({
+    id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     authors: PropTypes.arrayOf(PropTypes.string),
     shelf: PropTypes.string,
     imageLinks: PropTypes.shape({
-      thumbnail: PropTypes.string.isRequired,
-      smallThumbnail: PropTypes.string.isRequired
-    }).isRequired
+      thumbnail: PropTypes.string,
+      smallThumbnail: PropTypes.string
+    })
   }).isRequired,
   onUpdateShelf: PropTypes.func.isRequired
 };
