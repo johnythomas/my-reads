@@ -2,20 +2,22 @@ import React from "react";
 import { PropTypes } from "prop-types";
 import Book from "./Book";
 
-const BookShelf = ({ name, books, onUpdateShelf }) => (
+const BookShelf = ({ name, books, onUpdateShelf, isLoading }) => (
   <div className="bookshelf">
     <h2 className="bookshelf-title">{name}</h2>
     <div className="bookshelf-books">
       <ol className="books-grid">
-        {books.length !== 0 ? (
-          books.map(book => (
-            <li key={book.id}>
-              <Book book={book} onUpdateShelf={onUpdateShelf} />
-            </li>
-          ))
-        ) : (
-          <li className="message">There are no books in this shelf</li>
-        )}
+        {isLoading && <li>Loading...</li>}
+        {!isLoading &&
+          (books.length !== 0 ? (
+            books.map(book => (
+              <li key={book.id}>
+                <Book book={book} onUpdateShelf={onUpdateShelf} />
+              </li>
+            ))
+          ) : (
+            <li className="message">There are no books in this shelf</li>
+          ))}
       </ol>
     </div>
   </div>
@@ -35,7 +37,8 @@ BookShelf.propTypes = {
       })
     }).isRequired
   ).isRequired,
-  onUpdateShelf: PropTypes.func.isRequired
+  onUpdateShelf: PropTypes.func.isRequired,
+  isLoading: PropTypes.bool.isRequired
 };
 
 export default BookShelf;

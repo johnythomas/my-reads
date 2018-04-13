@@ -7,13 +7,15 @@ import SearchBooks from "./components/SearchBooks";
 
 class BooksApp extends Component {
   state = {
-    books: []
+    books: [],
+    isLoading: true
   };
 
   componentDidMount() {
     BooksAPI.getAll().then(books => {
       this.setState(() => ({
-        books
+        books,
+        isLoading: false
       }));
     });
   }
@@ -43,6 +45,7 @@ class BooksApp extends Component {
             <ListShelves
               onUpdateShelf={this.updateShelf}
               books={this.state.books}
+              isLoading={this.state.isLoading}
             />
           )}
         />

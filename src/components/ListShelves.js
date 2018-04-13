@@ -19,7 +19,7 @@ const bookShelves = [
   }
 ];
 
-const ListShelves = ({ books, onUpdateShelf }) => (
+const ListShelves = ({ books, onUpdateShelf, isLoading }) => (
   <div className="list-books">
     <div className="list-books-title">
       <h1>MyReads</h1>
@@ -32,6 +32,7 @@ const ListShelves = ({ books, onUpdateShelf }) => (
             name={shelf.displayName}
             books={filterBook(books, shelf.name)}
             onUpdateShelf={onUpdateShelf}
+            isLoading={isLoading}
           />
         ))}
       </div>
@@ -55,7 +56,8 @@ ListShelves.propTypes = {
       })
     }).isRequired
   ).isRequired,
-  onUpdateShelf: PropTypes.func.isRequired
+  onUpdateShelf: PropTypes.func.isRequired,
+  isLoading: PropTypes.bool.isRequired
 };
 
 export default ListShelves;
