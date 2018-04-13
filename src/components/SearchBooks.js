@@ -14,7 +14,7 @@ class SearchBooks extends Component {
   updateQuery = query => {
     this.setState(() => ({
       query,
-      isLoading: true,
+      isLoading: true
     }));
     if (!query) {
       this.setState(() => ({
@@ -29,7 +29,7 @@ class SearchBooks extends Component {
           !books || books.error === "empty query"
             ? []
             : this.mergeSearchResultWithBooks(books),
-        isLoading: false,
+        isLoading: false
       }));
     });
   };
@@ -60,16 +60,20 @@ class SearchBooks extends Component {
         </div>
         <div className="search-books-results">
           <ol className="books-grid">
-            {isLoading && <li className="loader"/>}
-            {!isLoading && (searchedBooks.length === 0 ? (
-              <li className="message">No Books found</li>
-            ) : (
-              searchedBooks.map(book => (
-                <li key={book.id}>
-                  <Book book={book} onUpdateShelf={this.props.onUpdateShelf} />
-                </li>
-              ))
-            ))}
+            {isLoading && <li className="loader" />}
+            {!isLoading &&
+              (searchedBooks.length === 0 ? (
+                <li className="message">No Books found</li>
+              ) : (
+                searchedBooks.map(book => (
+                  <li key={book.id}>
+                    <Book
+                      book={book}
+                      onUpdateShelf={this.props.onUpdateShelf}
+                    />
+                  </li>
+                ))
+              ))}
           </ol>
         </div>
       </div>
