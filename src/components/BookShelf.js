@@ -7,7 +7,7 @@ const BookShelf = ({ name, books, onUpdateShelf, isLoading }) => (
     <h2 className="bookshelf-title">{name}</h2>
     <div className="bookshelf-books">
       <ol className="books-grid">
-        {isLoading && <li>Loading...</li>}
+        {isLoading && <li className="loader" />}
         {!isLoading &&
           (books.length !== 0 ? (
             books.map(book => (
