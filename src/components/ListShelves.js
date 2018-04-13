@@ -3,21 +3,7 @@ import { Link } from "react-router-dom";
 import { PropTypes } from "prop-types";
 import BookShelf from "./BookShelf";
 import filterBook from "../BooksUtil";
-
-const bookShelves = [
-  {
-    name: "currentlyReading",
-    displayName: "Currently Reading"
-  },
-  {
-    name: "wantToRead",
-    displayName: "Want to Read"
-  },
-  {
-    name: "read",
-    displayName: "Read"
-  }
-];
+import BOOK_SHELVES from "../BookshelfConstants";
 
 const ListShelves = ({ books, onUpdateShelf, isLoading }) => (
   <div className="list-books">
@@ -26,7 +12,7 @@ const ListShelves = ({ books, onUpdateShelf, isLoading }) => (
     </div>
     <div className="list-books-content">
       <div>
-        {bookShelves.map(shelf => (
+        {BOOK_SHELVES.map(shelf => (
           <BookShelf
             key={shelf.name}
             name={shelf.displayName}

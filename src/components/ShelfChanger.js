@@ -1,5 +1,6 @@
 import React from "react";
 import { PropTypes } from "prop-types";
+import BOOK_SHELVES from "../BookshelfConstants";
 
 const ShelfChanger = ({ book, onUpdateShelf }) => (
   <div className="book-shelf-changer">
@@ -10,9 +11,9 @@ const ShelfChanger = ({ book, onUpdateShelf }) => (
       <option value="moveTo" disabled>
         Move to...
       </option>
-      <option value="currentlyReading">Currently Reading</option>
-      <option value="wantToRead">Want to Read</option>
-      <option value="read">Read</option>
+      {BOOK_SHELVES.map(shelf => (
+        <option value={shelf.name}>{shelf.displayName}</option>
+      ))}
       <option value="none">None</option>
     </select>
   </div>
