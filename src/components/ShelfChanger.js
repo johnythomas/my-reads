@@ -12,7 +12,9 @@ const ShelfChanger = ({ book, onUpdateShelf }) => (
         Move to...
       </option>
       {BOOK_SHELVES.map(shelf => (
-        <option value={shelf.name}>{shelf.displayName}</option>
+        <option key={shelf.name} value={shelf.name}>
+          {shelf.displayName}
+        </option>
       ))}
       <option value="none">None</option>
     </select>
