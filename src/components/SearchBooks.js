@@ -24,9 +24,9 @@ class SearchBooks extends Component {
       return;
     }
     BookAPI.search(query).then(books => {
-      this.setState(() => ({
+      this.setState(currentState => ({
         searchedBooks:
-          !books || books.error === "empty query"
+          !currentState.query || !books || books.error === "empty query"
             ? []
             : this.mergeSearchResultWithBooks(books),
         isLoading: false
