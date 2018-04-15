@@ -1,6 +1,7 @@
 import React from "react";
 import { PropTypes } from "prop-types";
 import ShelfChanger from "./ShelfChanger";
+import BookThumbnail from "../images/BookThumbnail.png";
 
 const Book = ({ book, onUpdateShelf }) => (
   <div className="book">
@@ -11,7 +12,7 @@ const Book = ({ book, onUpdateShelf }) => (
           width: 128,
           height: 193,
           backgroundImage: `url("${
-            book.imageLinks ? book.imageLinks.smallThumbnail : ""
+            book.imageLinks ? book.imageLinks.smallThumbnail : BookThumbnail
           }")`
         }}
       />
