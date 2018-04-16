@@ -1,7 +1,7 @@
 import React from "react";
 import { PropTypes } from "prop-types";
 import ShelfChanger from "./ShelfChanger";
-import BookThumbnail from "../images/BookThumbnail.png";
+import BookThumbnail from "../icons/BookThumbnail.png";
 
 const Book = ({ book, onUpdateShelf }) => (
   <div className="book">
