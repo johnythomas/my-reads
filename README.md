@@ -36,6 +36,7 @@ To setup the project locally you need [npm](https://www.npmjs.com/) or [Yarn](ht
     │   ├── Book.js # Book Component which displays individual books.
     │   ├── BookShelf.js # Used to display a bookshelf. It has a list of books which is displayed using Book component.
     │   ├── ListShelves.js # Used to display a list of bookshelves.
+    │   ├── NotFound.js # 404 page.
     │   ├── SearchBooks.js # Used to search and add books from the Udacity backend API.
     │   └── ShelfChanger.js # Used to change the shelf of a book.
     ├── App.css # Styles for the app.
