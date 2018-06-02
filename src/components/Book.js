@@ -18,7 +18,9 @@ const Book = ({ book, onUpdateShelf }) => (
       />
       <ShelfChanger book={book} onUpdateShelf={onUpdateShelf} />
     </div>
-    <div className="book-title">{book.title}</div>
+    <a className="book-title" target="_blank" href={book.previewLink}>
+      {book.title}
+    </a>
     <div className="book-authors">{book.authors && book.authors.join()}</div>
   </div>
 );
@@ -32,7 +34,8 @@ Book.propTypes = {
     imageLinks: PropTypes.shape({
       thumbnail: PropTypes.string,
       smallThumbnail: PropTypes.string
-    })
+    }),
+    previewLink: PropTypes.string.isRequired
   }).isRequired,
   onUpdateShelf: PropTypes.func.isRequired
 };
