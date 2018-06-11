@@ -1,0 +1,374 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Book should render without crashing 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Book
+    book={
+        Object {
+            "authors": Array [
+              "J.K Rowling",
+            ],
+            "id": "azcv34we134pxcviobx",
+            "imageLinks": Object {
+              "smallThumbnail": "smallThumbnail.jpg",
+              "thumbnail": "thumbnail.jpg",
+            },
+            "previewLink": "mock.com",
+            "shelf": "read",
+            "title": "Harry Potter",
+          }
+    }
+    onUpdateShelf={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="book-top"
+>
+          <div
+                    className="book-cover"
+                    style={
+                              Object {
+                                        "backgroundImage": "url(\\"smallThumbnail.jpg\\")",
+                                        "height": 193,
+                                        "width": 128,
+                                      }
+                    }
+          />
+          <ShelfChanger
+                    book={
+                              Object {
+                                        "authors": Array [
+                                          "J.K Rowling",
+                                        ],
+                                        "id": "azcv34we134pxcviobx",
+                                        "imageLinks": Object {
+                                          "smallThumbnail": "smallThumbnail.jpg",
+                                          "thumbnail": "thumbnail.jpg",
+                                        },
+                                        "previewLink": "mock.com",
+                                        "shelf": "read",
+                                        "title": "Harry Potter",
+                                      }
+                    }
+                    onUpdateShelf={[Function]}
+          />
+</div>,
+        <a
+          className="book-title"
+          href="mock.com"
+          target="_blank"
+>
+          Harry Potter
+</a>,
+        <div
+          className="book-authors"
+>
+          J.K Rowling
+</div>,
+      ],
+      "className": "book",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="book-cover"
+              style={
+                            Object {
+                                          "backgroundImage": "url(\\"smallThumbnail.jpg\\")",
+                                          "height": 193,
+                                          "width": 128,
+                                        }
+              }
+/>,
+            <ShelfChanger
+              book={
+                            Object {
+                                          "authors": Array [
+                                            "J.K Rowling",
+                                          ],
+                                          "id": "azcv34we134pxcviobx",
+                                          "imageLinks": Object {
+                                            "smallThumbnail": "smallThumbnail.jpg",
+                                            "thumbnail": "thumbnail.jpg",
+                                          },
+                                          "previewLink": "mock.com",
+                                          "shelf": "read",
+                                          "title": "Harry Potter",
+                                        }
+              }
+              onUpdateShelf={[Function]}
+/>,
+          ],
+          "className": "book-top",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "book-cover",
+              "style": Object {
+                "backgroundImage": "url(\\"smallThumbnail.jpg\\")",
+                "height": 193,
+                "width": 128,
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "book": Object {
+                "authors": Array [
+                  "J.K Rowling",
+                ],
+                "id": "azcv34we134pxcviobx",
+                "imageLinks": Object {
+                  "smallThumbnail": "smallThumbnail.jpg",
+                  "thumbnail": "thumbnail.jpg",
+                },
+                "previewLink": "mock.com",
+                "shelf": "read",
+                "title": "Harry Potter",
+              },
+              "onUpdateShelf": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Harry Potter",
+          "className": "book-title",
+          "href": "mock.com",
+          "target": "_blank",
+        },
+        "ref": null,
+        "rendered": "Harry Potter",
+        "type": "a",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "J.K Rowling",
+          "className": "book-authors",
+        },
+        "ref": null,
+        "rendered": "J.K Rowling",
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="book-top"
+>
+            <div
+                        className="book-cover"
+                        style={
+                                    Object {
+                                                "backgroundImage": "url(\\"smallThumbnail.jpg\\")",
+                                                "height": 193,
+                                                "width": 128,
+                                              }
+                        }
+            />
+            <ShelfChanger
+                        book={
+                                    Object {
+                                                "authors": Array [
+                                                  "J.K Rowling",
+                                                ],
+                                                "id": "azcv34we134pxcviobx",
+                                                "imageLinks": Object {
+                                                  "smallThumbnail": "smallThumbnail.jpg",
+                                                  "thumbnail": "thumbnail.jpg",
+                                                },
+                                                "previewLink": "mock.com",
+                                                "shelf": "read",
+                                                "title": "Harry Potter",
+                                              }
+                        }
+                        onUpdateShelf={[Function]}
+            />
+</div>,
+          <a
+            className="book-title"
+            href="mock.com"
+            target="_blank"
+>
+            Harry Potter
+</a>,
+          <div
+            className="book-authors"
+>
+            J.K Rowling
+</div>,
+        ],
+        "className": "book",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="book-cover"
+                style={
+                                Object {
+                                                "backgroundImage": "url(\\"smallThumbnail.jpg\\")",
+                                                "height": 193,
+                                                "width": 128,
+                                              }
+                }
+/>,
+              <ShelfChanger
+                book={
+                                Object {
+                                                "authors": Array [
+                                                  "J.K Rowling",
+                                                ],
+                                                "id": "azcv34we134pxcviobx",
+                                                "imageLinks": Object {
+                                                  "smallThumbnail": "smallThumbnail.jpg",
+                                                  "thumbnail": "thumbnail.jpg",
+                                                },
+                                                "previewLink": "mock.com",
+                                                "shelf": "read",
+                                                "title": "Harry Potter",
+                                              }
+                }
+                onUpdateShelf={[Function]}
+/>,
+            ],
+            "className": "book-top",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "book-cover",
+                "style": Object {
+                  "backgroundImage": "url(\\"smallThumbnail.jpg\\")",
+                  "height": 193,
+                  "width": 128,
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "book": Object {
+                  "authors": Array [
+                    "J.K Rowling",
+                  ],
+                  "id": "azcv34we134pxcviobx",
+                  "imageLinks": Object {
+                    "smallThumbnail": "smallThumbnail.jpg",
+                    "thumbnail": "thumbnail.jpg",
+                  },
+                  "previewLink": "mock.com",
+                  "shelf": "read",
+                  "title": "Harry Potter",
+                },
+                "onUpdateShelf": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Harry Potter",
+            "className": "book-title",
+            "href": "mock.com",
+            "target": "_blank",
+          },
+          "ref": null,
+          "rendered": "Harry Potter",
+          "type": "a",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "J.K Rowling",
+            "className": "book-authors",
+          },
+          "ref": null,
+          "rendered": "J.K Rowling",
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
