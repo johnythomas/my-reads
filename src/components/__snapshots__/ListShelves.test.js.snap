@@ -1,0 +1,883 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListShelves should render without crashing 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ListShelves
+    books={
+        Array [
+            Object {
+              "authors": Array [
+                "J.K Rowling",
+              ],
+              "id": "azcv34we134pxcviobx",
+              "imageLinks": Object {
+                "smallThumbnail": "smallThumbnail.jpg",
+                "thumbnail": "thumbnail.jpg",
+              },
+              "previewLink": "harrypotter.com",
+              "shelf": "read",
+              "title": "Harry Potter",
+            },
+            Object {
+              "authors": Array [
+                "Robert Sedgewick",
+                "Kevin Wayne",
+              ],
+              "id": "azcv34we134pgxbvciobx",
+              "imageLinks": Object {
+                "smallThumbnail": "smallThumbnail.jpg",
+                "thumbnail": "thumbnail.jpg",
+              },
+              "previewLink": "algorithms.com",
+              "shelf": "currentlyReading",
+              "title": "Algorithms",
+            },
+            Object {
+              "authors": Array [
+                "Alex Banks",
+                "Eve Porcello",
+              ],
+              "id": "r2sdxcqe4we134pcvhsart",
+              "imageLinks": Object {
+                "smallThumbnail": "smallThumbnail.jpg",
+                "thumbnail": "thumbnail.jpg",
+              },
+              "previewLink": "react.com",
+              "shelf": "wantToRead",
+              "title": "Learning React: Functional Web Development with React and Redux",
+            },
+          ]
+    }
+    isLoading={false}
+    onUpdateShelf={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="list-books-title"
+>
+          <h1>
+                    MyReads
+          </h1>
+</div>,
+        <div
+          className="list-books-content"
+>
+          <div>
+                    <BookShelf
+                              books={
+                                        Array [
+                                                  Object {
+                                                    "authors": Array [
+                                                      "Robert Sedgewick",
+                                                      "Kevin Wayne",
+                                                    ],
+                                                    "id": "azcv34we134pgxbvciobx",
+                                                    "imageLinks": Object {
+                                                      "smallThumbnail": "smallThumbnail.jpg",
+                                                      "thumbnail": "thumbnail.jpg",
+                                                    },
+                                                    "previewLink": "algorithms.com",
+                                                    "shelf": "currentlyReading",
+                                                    "title": "Algorithms",
+                                                  },
+                                                ]
+                              }
+                              isLoading={false}
+                              name="Currently Reading"
+                              onUpdateShelf={[Function]}
+                    />
+                    <BookShelf
+                              books={
+                                        Array [
+                                                  Object {
+                                                    "authors": Array [
+                                                      "Alex Banks",
+                                                      "Eve Porcello",
+                                                    ],
+                                                    "id": "r2sdxcqe4we134pcvhsart",
+                                                    "imageLinks": Object {
+                                                      "smallThumbnail": "smallThumbnail.jpg",
+                                                      "thumbnail": "thumbnail.jpg",
+                                                    },
+                                                    "previewLink": "react.com",
+                                                    "shelf": "wantToRead",
+                                                    "title": "Learning React: Functional Web Development with React and Redux",
+                                                  },
+                                                ]
+                              }
+                              isLoading={false}
+                              name="Want to Read"
+                              onUpdateShelf={[Function]}
+                    />
+                    <BookShelf
+                              books={
+                                        Array [
+                                                  Object {
+                                                    "authors": Array [
+                                                      "J.K Rowling",
+                                                    ],
+                                                    "id": "azcv34we134pxcviobx",
+                                                    "imageLinks": Object {
+                                                      "smallThumbnail": "smallThumbnail.jpg",
+                                                      "thumbnail": "thumbnail.jpg",
+                                                    },
+                                                    "previewLink": "harrypotter.com",
+                                                    "shelf": "read",
+                                                    "title": "Harry Potter",
+                                                  },
+                                                ]
+                              }
+                              isLoading={false}
+                              name="Read"
+                              onUpdateShelf={[Function]}
+                    />
+          </div>
+</div>,
+        <div
+          className="open-search"
+>
+          <Link
+                    replace={false}
+                    to="/search"
+          >
+                    Add a book
+          </Link>
+</div>,
+      ],
+      "className": "list-books",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <h1>
+            MyReads
+</h1>,
+          "className": "list-books-title",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "MyReads",
+          },
+          "ref": null,
+          "rendered": "MyReads",
+          "type": "h1",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div>
+            <BookShelf
+                        books={
+                                    Array [
+                                                Object {
+                                                  "authors": Array [
+                                                    "Robert Sedgewick",
+                                                    "Kevin Wayne",
+                                                  ],
+                                                  "id": "azcv34we134pgxbvciobx",
+                                                  "imageLinks": Object {
+                                                    "smallThumbnail": "smallThumbnail.jpg",
+                                                    "thumbnail": "thumbnail.jpg",
+                                                  },
+                                                  "previewLink": "algorithms.com",
+                                                  "shelf": "currentlyReading",
+                                                  "title": "Algorithms",
+                                                },
+                                              ]
+                        }
+                        isLoading={false}
+                        name="Currently Reading"
+                        onUpdateShelf={[Function]}
+            />
+            <BookShelf
+                        books={
+                                    Array [
+                                                Object {
+                                                  "authors": Array [
+                                                    "Alex Banks",
+                                                    "Eve Porcello",
+                                                  ],
+                                                  "id": "r2sdxcqe4we134pcvhsart",
+                                                  "imageLinks": Object {
+                                                    "smallThumbnail": "smallThumbnail.jpg",
+                                                    "thumbnail": "thumbnail.jpg",
+                                                  },
+                                                  "previewLink": "react.com",
+                                                  "shelf": "wantToRead",
+                                                  "title": "Learning React: Functional Web Development with React and Redux",
+                                                },
+                                              ]
+                        }
+                        isLoading={false}
+                        name="Want to Read"
+                        onUpdateShelf={[Function]}
+            />
+            <BookShelf
+                        books={
+                                    Array [
+                                                Object {
+                                                  "authors": Array [
+                                                    "J.K Rowling",
+                                                  ],
+                                                  "id": "azcv34we134pxcviobx",
+                                                  "imageLinks": Object {
+                                                    "smallThumbnail": "smallThumbnail.jpg",
+                                                    "thumbnail": "thumbnail.jpg",
+                                                  },
+                                                  "previewLink": "harrypotter.com",
+                                                  "shelf": "read",
+                                                  "title": "Harry Potter",
+                                                },
+                                              ]
+                        }
+                        isLoading={false}
+                        name="Read"
+                        onUpdateShelf={[Function]}
+            />
+</div>,
+          "className": "list-books-content",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <BookShelf
+                books={
+                                Array [
+                                                Object {
+                                                  "authors": Array [
+                                                    "Robert Sedgewick",
+                                                    "Kevin Wayne",
+                                                  ],
+                                                  "id": "azcv34we134pgxbvciobx",
+                                                  "imageLinks": Object {
+                                                    "smallThumbnail": "smallThumbnail.jpg",
+                                                    "thumbnail": "thumbnail.jpg",
+                                                  },
+                                                  "previewLink": "algorithms.com",
+                                                  "shelf": "currentlyReading",
+                                                  "title": "Algorithms",
+                                                },
+                                              ]
+                }
+                isLoading={false}
+                name="Currently Reading"
+                onUpdateShelf={[Function]}
+/>,
+              <BookShelf
+                books={
+                                Array [
+                                                Object {
+                                                  "authors": Array [
+                                                    "Alex Banks",
+                                                    "Eve Porcello",
+                                                  ],
+                                                  "id": "r2sdxcqe4we134pcvhsart",
+                                                  "imageLinks": Object {
+                                                    "smallThumbnail": "smallThumbnail.jpg",
+                                                    "thumbnail": "thumbnail.jpg",
+                                                  },
+                                                  "previewLink": "react.com",
+                                                  "shelf": "wantToRead",
+                                                  "title": "Learning React: Functional Web Development with React and Redux",
+                                                },
+                                              ]
+                }
+                isLoading={false}
+                name="Want to Read"
+                onUpdateShelf={[Function]}
+/>,
+              <BookShelf
+                books={
+                                Array [
+                                                Object {
+                                                  "authors": Array [
+                                                    "J.K Rowling",
+                                                  ],
+                                                  "id": "azcv34we134pxcviobx",
+                                                  "imageLinks": Object {
+                                                    "smallThumbnail": "smallThumbnail.jpg",
+                                                    "thumbnail": "thumbnail.jpg",
+                                                  },
+                                                  "previewLink": "harrypotter.com",
+                                                  "shelf": "read",
+                                                  "title": "Harry Potter",
+                                                },
+                                              ]
+                }
+                isLoading={false}
+                name="Read"
+                onUpdateShelf={[Function]}
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "currentlyReading",
+              "nodeType": "function",
+              "props": Object {
+                "books": Array [
+                  Object {
+                    "authors": Array [
+                      "Robert Sedgewick",
+                      "Kevin Wayne",
+                    ],
+                    "id": "azcv34we134pgxbvciobx",
+                    "imageLinks": Object {
+                      "smallThumbnail": "smallThumbnail.jpg",
+                      "thumbnail": "thumbnail.jpg",
+                    },
+                    "previewLink": "algorithms.com",
+                    "shelf": "currentlyReading",
+                    "title": "Algorithms",
+                  },
+                ],
+                "isLoading": false,
+                "name": "Currently Reading",
+                "onUpdateShelf": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "wantToRead",
+              "nodeType": "function",
+              "props": Object {
+                "books": Array [
+                  Object {
+                    "authors": Array [
+                      "Alex Banks",
+                      "Eve Porcello",
+                    ],
+                    "id": "r2sdxcqe4we134pcvhsart",
+                    "imageLinks": Object {
+                      "smallThumbnail": "smallThumbnail.jpg",
+                      "thumbnail": "thumbnail.jpg",
+                    },
+                    "previewLink": "react.com",
+                    "shelf": "wantToRead",
+                    "title": "Learning React: Functional Web Development with React and Redux",
+                  },
+                ],
+                "isLoading": false,
+                "name": "Want to Read",
+                "onUpdateShelf": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "read",
+              "nodeType": "function",
+              "props": Object {
+                "books": Array [
+                  Object {
+                    "authors": Array [
+                      "J.K Rowling",
+                    ],
+                    "id": "azcv34we134pxcviobx",
+                    "imageLinks": Object {
+                      "smallThumbnail": "smallThumbnail.jpg",
+                      "thumbnail": "thumbnail.jpg",
+                    },
+                    "previewLink": "harrypotter.com",
+                    "shelf": "read",
+                    "title": "Harry Potter",
+                  },
+                ],
+                "isLoading": false,
+                "name": "Read",
+                "onUpdateShelf": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Link
+            replace={false}
+            to="/search"
+>
+            Add a book
+</Link>,
+          "className": "open-search",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Add a book",
+            "replace": false,
+            "to": "/search",
+          },
+          "ref": null,
+          "rendered": "Add a book",
+          "type": [Function],
+        },
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="list-books-title"
+>
+            <h1>
+                        MyReads
+            </h1>
+</div>,
+          <div
+            className="list-books-content"
+>
+            <div>
+                        <BookShelf
+                                    books={
+                                                Array [
+                                                            Object {
+                                                              "authors": Array [
+                                                                "Robert Sedgewick",
+                                                                "Kevin Wayne",
+                                                              ],
+                                                              "id": "azcv34we134pgxbvciobx",
+                                                              "imageLinks": Object {
+                                                                "smallThumbnail": "smallThumbnail.jpg",
+                                                                "thumbnail": "thumbnail.jpg",
+                                                              },
+                                                              "previewLink": "algorithms.com",
+                                                              "shelf": "currentlyReading",
+                                                              "title": "Algorithms",
+                                                            },
+                                                          ]
+                                    }
+                                    isLoading={false}
+                                    name="Currently Reading"
+                                    onUpdateShelf={[Function]}
+                        />
+                        <BookShelf
+                                    books={
+                                                Array [
+                                                            Object {
+                                                              "authors": Array [
+                                                                "Alex Banks",
+                                                                "Eve Porcello",
+                                                              ],
+                                                              "id": "r2sdxcqe4we134pcvhsart",
+                                                              "imageLinks": Object {
+                                                                "smallThumbnail": "smallThumbnail.jpg",
+                                                                "thumbnail": "thumbnail.jpg",
+                                                              },
+                                                              "previewLink": "react.com",
+                                                              "shelf": "wantToRead",
+                                                              "title": "Learning React: Functional Web Development with React and Redux",
+                                                            },
+                                                          ]
+                                    }
+                                    isLoading={false}
+                                    name="Want to Read"
+                                    onUpdateShelf={[Function]}
+                        />
+                        <BookShelf
+                                    books={
+                                                Array [
+                                                            Object {
+                                                              "authors": Array [
+                                                                "J.K Rowling",
+                                                              ],
+                                                              "id": "azcv34we134pxcviobx",
+                                                              "imageLinks": Object {
+                                                                "smallThumbnail": "smallThumbnail.jpg",
+                                                                "thumbnail": "thumbnail.jpg",
+                                                              },
+                                                              "previewLink": "harrypotter.com",
+                                                              "shelf": "read",
+                                                              "title": "Harry Potter",
+                                                            },
+                                                          ]
+                                    }
+                                    isLoading={false}
+                                    name="Read"
+                                    onUpdateShelf={[Function]}
+                        />
+            </div>
+</div>,
+          <div
+            className="open-search"
+>
+            <Link
+                        replace={false}
+                        to="/search"
+            >
+                        Add a book
+            </Link>
+</div>,
+        ],
+        "className": "list-books",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <h1>
+              MyReads
+</h1>,
+            "className": "list-books-title",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "MyReads",
+            },
+            "ref": null,
+            "rendered": "MyReads",
+            "type": "h1",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div>
+              <BookShelf
+                            books={
+                                          Array [
+                                                        Object {
+                                                          "authors": Array [
+                                                            "Robert Sedgewick",
+                                                            "Kevin Wayne",
+                                                          ],
+                                                          "id": "azcv34we134pgxbvciobx",
+                                                          "imageLinks": Object {
+                                                            "smallThumbnail": "smallThumbnail.jpg",
+                                                            "thumbnail": "thumbnail.jpg",
+                                                          },
+                                                          "previewLink": "algorithms.com",
+                                                          "shelf": "currentlyReading",
+                                                          "title": "Algorithms",
+                                                        },
+                                                      ]
+                            }
+                            isLoading={false}
+                            name="Currently Reading"
+                            onUpdateShelf={[Function]}
+              />
+              <BookShelf
+                            books={
+                                          Array [
+                                                        Object {
+                                                          "authors": Array [
+                                                            "Alex Banks",
+                                                            "Eve Porcello",
+                                                          ],
+                                                          "id": "r2sdxcqe4we134pcvhsart",
+                                                          "imageLinks": Object {
+                                                            "smallThumbnail": "smallThumbnail.jpg",
+                                                            "thumbnail": "thumbnail.jpg",
+                                                          },
+                                                          "previewLink": "react.com",
+                                                          "shelf": "wantToRead",
+                                                          "title": "Learning React: Functional Web Development with React and Redux",
+                                                        },
+                                                      ]
+                            }
+                            isLoading={false}
+                            name="Want to Read"
+                            onUpdateShelf={[Function]}
+              />
+              <BookShelf
+                            books={
+                                          Array [
+                                                        Object {
+                                                          "authors": Array [
+                                                            "J.K Rowling",
+                                                          ],
+                                                          "id": "azcv34we134pxcviobx",
+                                                          "imageLinks": Object {
+                                                            "smallThumbnail": "smallThumbnail.jpg",
+                                                            "thumbnail": "thumbnail.jpg",
+                                                          },
+                                                          "previewLink": "harrypotter.com",
+                                                          "shelf": "read",
+                                                          "title": "Harry Potter",
+                                                        },
+                                                      ]
+                            }
+                            isLoading={false}
+                            name="Read"
+                            onUpdateShelf={[Function]}
+              />
+</div>,
+            "className": "list-books-content",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <BookShelf
+                  books={
+                                    Array [
+                                                      Object {
+                                                        "authors": Array [
+                                                          "Robert Sedgewick",
+                                                          "Kevin Wayne",
+                                                        ],
+                                                        "id": "azcv34we134pgxbvciobx",
+                                                        "imageLinks": Object {
+                                                          "smallThumbnail": "smallThumbnail.jpg",
+                                                          "thumbnail": "thumbnail.jpg",
+                                                        },
+                                                        "previewLink": "algorithms.com",
+                                                        "shelf": "currentlyReading",
+                                                        "title": "Algorithms",
+                                                      },
+                                                    ]
+                  }
+                  isLoading={false}
+                  name="Currently Reading"
+                  onUpdateShelf={[Function]}
+/>,
+                <BookShelf
+                  books={
+                                    Array [
+                                                      Object {
+                                                        "authors": Array [
+                                                          "Alex Banks",
+                                                          "Eve Porcello",
+                                                        ],
+                                                        "id": "r2sdxcqe4we134pcvhsart",
+                                                        "imageLinks": Object {
+                                                          "smallThumbnail": "smallThumbnail.jpg",
+                                                          "thumbnail": "thumbnail.jpg",
+                                                        },
+                                                        "previewLink": "react.com",
+                                                        "shelf": "wantToRead",
+                                                        "title": "Learning React: Functional Web Development with React and Redux",
+                                                      },
+                                                    ]
+                  }
+                  isLoading={false}
+                  name="Want to Read"
+                  onUpdateShelf={[Function]}
+/>,
+                <BookShelf
+                  books={
+                                    Array [
+                                                      Object {
+                                                        "authors": Array [
+                                                          "J.K Rowling",
+                                                        ],
+                                                        "id": "azcv34we134pxcviobx",
+                                                        "imageLinks": Object {
+                                                          "smallThumbnail": "smallThumbnail.jpg",
+                                                          "thumbnail": "thumbnail.jpg",
+                                                        },
+                                                        "previewLink": "harrypotter.com",
+                                                        "shelf": "read",
+                                                        "title": "Harry Potter",
+                                                      },
+                                                    ]
+                  }
+                  isLoading={false}
+                  name="Read"
+                  onUpdateShelf={[Function]}
+/>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "currentlyReading",
+                "nodeType": "function",
+                "props": Object {
+                  "books": Array [
+                    Object {
+                      "authors": Array [
+                        "Robert Sedgewick",
+                        "Kevin Wayne",
+                      ],
+                      "id": "azcv34we134pgxbvciobx",
+                      "imageLinks": Object {
+                        "smallThumbnail": "smallThumbnail.jpg",
+                        "thumbnail": "thumbnail.jpg",
+                      },
+                      "previewLink": "algorithms.com",
+                      "shelf": "currentlyReading",
+                      "title": "Algorithms",
+                    },
+                  ],
+                  "isLoading": false,
+                  "name": "Currently Reading",
+                  "onUpdateShelf": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "wantToRead",
+                "nodeType": "function",
+                "props": Object {
+                  "books": Array [
+                    Object {
+                      "authors": Array [
+                        "Alex Banks",
+                        "Eve Porcello",
+                      ],
+                      "id": "r2sdxcqe4we134pcvhsart",
+                      "imageLinks": Object {
+                        "smallThumbnail": "smallThumbnail.jpg",
+                        "thumbnail": "thumbnail.jpg",
+                      },
+                      "previewLink": "react.com",
+                      "shelf": "wantToRead",
+                      "title": "Learning React: Functional Web Development with React and Redux",
+                    },
+                  ],
+                  "isLoading": false,
+                  "name": "Want to Read",
+                  "onUpdateShelf": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "read",
+                "nodeType": "function",
+                "props": Object {
+                  "books": Array [
+                    Object {
+                      "authors": Array [
+                        "J.K Rowling",
+                      ],
+                      "id": "azcv34we134pxcviobx",
+                      "imageLinks": Object {
+                        "smallThumbnail": "smallThumbnail.jpg",
+                        "thumbnail": "thumbnail.jpg",
+                      },
+                      "previewLink": "harrypotter.com",
+                      "shelf": "read",
+                      "title": "Harry Potter",
+                    },
+                  ],
+                  "isLoading": false,
+                  "name": "Read",
+                  "onUpdateShelf": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Link
+              replace={false}
+              to="/search"
+>
+              Add a book
+</Link>,
+            "className": "open-search",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Add a book",
+              "replace": false,
+              "to": "/search",
+            },
+            "ref": null,
+            "rendered": "Add a book",
+            "type": [Function],
+          },
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
