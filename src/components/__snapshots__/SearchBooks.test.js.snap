@@ -1,0 +1,486 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchBooks should render without crashing 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <SearchBooks
+    books={
+        Array [
+            Object {
+              "authors": Array [
+                "J.K Rowling",
+              ],
+              "id": "azcv34we134pxcviobx",
+              "imageLinks": Object {
+                "smallThumbnail": "smallThumbnail.jpg",
+                "thumbnail": "thumbnail.jpg",
+              },
+              "previewLink": "harrypotter.com",
+              "shelf": "read",
+              "title": "Harry Potter",
+            },
+            Object {
+              "authors": Array [
+                "Robert Sedgewick",
+                "Kevin Wayne",
+              ],
+              "id": "azcv34we134pgxbvciobx",
+              "imageLinks": Object {
+                "smallThumbnail": "smallThumbnail.jpg",
+                "thumbnail": "thumbnail.jpg",
+              },
+              "previewLink": "algorithms.com",
+              "shelf": "currentlyReading",
+              "title": "Algorithms",
+            },
+            Object {
+              "authors": Array [
+                "Alex Banks",
+                "Eve Porcello",
+              ],
+              "id": "r2sdxcqe4we134pcvhsart",
+              "imageLinks": Object {
+                "smallThumbnail": "smallThumbnail.jpg",
+                "thumbnail": "thumbnail.jpg",
+              },
+              "previewLink": "react.com",
+              "shelf": "wantToRead",
+              "title": "Learning React: Functional Web Development with React and Redux",
+            },
+          ]
+    }
+    onUpdateShelf={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="search-books-bar"
+>
+          <Link
+                    className="close-search"
+                    replace={false}
+                    to="/"
+          >
+                    Close
+          </Link>
+          <div
+                    className="search-books-input-wrapper"
+          >
+                    <DebounceInput
+                              debounceTimeout={300}
+                              element="input"
+                              forceNotifyByEnter={true}
+                              forceNotifyOnBlur={true}
+                              inputRef={undefined}
+                              minLength={0}
+                              onBlur={undefined}
+                              onChange={[Function]}
+                              onKeyDown={undefined}
+                              placeholder="Search by title or author"
+                              type="text"
+                              value=""
+                    />
+          </div>
+</div>,
+        <div
+          className="search-books-results"
+>
+          <ol
+                    className="books-grid"
+          >
+                    <li
+                              className="message"
+                    >
+                              No Books found
+                    </li>
+          </ol>
+</div>,
+      ],
+      "className": "search-books",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Link
+              className="close-search"
+              replace={false}
+              to="/"
+>
+              Close
+</Link>,
+            <div
+              className="search-books-input-wrapper"
+>
+              <DebounceInput
+                            debounceTimeout={300}
+                            element="input"
+                            forceNotifyByEnter={true}
+                            forceNotifyOnBlur={true}
+                            inputRef={undefined}
+                            minLength={0}
+                            onBlur={undefined}
+                            onChange={[Function]}
+                            onKeyDown={undefined}
+                            placeholder="Search by title or author"
+                            type="text"
+                            value=""
+              />
+</div>,
+          ],
+          "className": "search-books-bar",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Close",
+              "className": "close-search",
+              "replace": false,
+              "to": "/",
+            },
+            "ref": null,
+            "rendered": "Close",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <DebounceInput
+                debounceTimeout={300}
+                element="input"
+                forceNotifyByEnter={true}
+                forceNotifyOnBlur={true}
+                inputRef={undefined}
+                minLength={0}
+                onBlur={undefined}
+                onChange={[Function]}
+                onKeyDown={undefined}
+                placeholder="Search by title or author"
+                type="text"
+                value=""
+/>,
+              "className": "search-books-input-wrapper",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "debounceTimeout": 300,
+                "element": "input",
+                "forceNotifyByEnter": true,
+                "forceNotifyOnBlur": true,
+                "inputRef": undefined,
+                "minLength": 0,
+                "onBlur": undefined,
+                "onChange": [Function],
+                "onKeyDown": undefined,
+                "placeholder": "Search by title or author",
+                "type": "text",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <ol
+            className="books-grid"
+>
+            <li
+                        className="message"
+            >
+                        No Books found
+            </li>
+</ol>,
+          "className": "search-books-results",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              false,
+              <li
+                className="message"
+>
+                No Books found
+</li>,
+            ],
+            "className": "books-grid",
+          },
+          "ref": null,
+          "rendered": Array [
+            false,
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "No Books found",
+                "className": "message",
+              },
+              "ref": null,
+              "rendered": "No Books found",
+              "type": "li",
+            },
+          ],
+          "type": "ol",
+        },
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="search-books-bar"
+>
+            <Link
+                        className="close-search"
+                        replace={false}
+                        to="/"
+            >
+                        Close
+            </Link>
+            <div
+                        className="search-books-input-wrapper"
+            >
+                        <DebounceInput
+                                    debounceTimeout={300}
+                                    element="input"
+                                    forceNotifyByEnter={true}
+                                    forceNotifyOnBlur={true}
+                                    inputRef={undefined}
+                                    minLength={0}
+                                    onBlur={undefined}
+                                    onChange={[Function]}
+                                    onKeyDown={undefined}
+                                    placeholder="Search by title or author"
+                                    type="text"
+                                    value=""
+                        />
+            </div>
+</div>,
+          <div
+            className="search-books-results"
+>
+            <ol
+                        className="books-grid"
+            >
+                        <li
+                                    className="message"
+                        >
+                                    No Books found
+                        </li>
+            </ol>
+</div>,
+        ],
+        "className": "search-books",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Link
+                className="close-search"
+                replace={false}
+                to="/"
+>
+                Close
+</Link>,
+              <div
+                className="search-books-input-wrapper"
+>
+                <DebounceInput
+                                debounceTimeout={300}
+                                element="input"
+                                forceNotifyByEnter={true}
+                                forceNotifyOnBlur={true}
+                                inputRef={undefined}
+                                minLength={0}
+                                onBlur={undefined}
+                                onChange={[Function]}
+                                onKeyDown={undefined}
+                                placeholder="Search by title or author"
+                                type="text"
+                                value=""
+                />
+</div>,
+            ],
+            "className": "search-books-bar",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Close",
+                "className": "close-search",
+                "replace": false,
+                "to": "/",
+              },
+              "ref": null,
+              "rendered": "Close",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <DebounceInput
+                  debounceTimeout={300}
+                  element="input"
+                  forceNotifyByEnter={true}
+                  forceNotifyOnBlur={true}
+                  inputRef={undefined}
+                  minLength={0}
+                  onBlur={undefined}
+                  onChange={[Function]}
+                  onKeyDown={undefined}
+                  placeholder="Search by title or author"
+                  type="text"
+                  value=""
+/>,
+                "className": "search-books-input-wrapper",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "debounceTimeout": 300,
+                  "element": "input",
+                  "forceNotifyByEnter": true,
+                  "forceNotifyOnBlur": true,
+                  "inputRef": undefined,
+                  "minLength": 0,
+                  "onBlur": undefined,
+                  "onChange": [Function],
+                  "onKeyDown": undefined,
+                  "placeholder": "Search by title or author",
+                  "type": "text",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <ol
+              className="books-grid"
+>
+              <li
+                            className="message"
+              >
+                            No Books found
+              </li>
+</ol>,
+            "className": "search-books-results",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                false,
+                <li
+                  className="message"
+>
+                  No Books found
+</li>,
+              ],
+              "className": "books-grid",
+            },
+            "ref": null,
+            "rendered": Array [
+              false,
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "No Books found",
+                  "className": "message",
+                },
+                "ref": null,
+                "rendered": "No Books found",
+                "type": "li",
+              },
+            ],
+            "type": "ol",
+          },
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
