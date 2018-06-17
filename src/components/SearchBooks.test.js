@@ -63,7 +63,7 @@ describe("SearchBooks", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it("should render the books that was searched", () => {
+  it("should show the message 'No Books found' when no books are found", () => {
     const wrapper = shallow(
       <SearchBooks {...props} onUpdateShelf={jest.fn()} />
     );
