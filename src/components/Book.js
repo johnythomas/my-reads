@@ -18,7 +18,7 @@ const Book = ({ book, onUpdateShelf }) => (
       />
       <ShelfChanger book={book} onUpdateShelf={onUpdateShelf} />
     </div>
-    <a className="book-title" target="_blank" href={book.previewLink}>
+    <a className="book-title" target="_blank" rel="noopener noreferrer" href={book.previewLink}>
       {book.title}
     </a>
     <div className="book-authors">{book.authors && book.authors.join()}</div>

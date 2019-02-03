@@ -1,14 +1,15 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
-import { PropTypes } from "prop-types";
 import { DebounceInput } from "react-debounce-input";
 import * as BookAPI from "../BooksAPI";
 import Book from "./Book";
+import BooksContext from "../context";
 
-const SearchBooks = ({ books, onUpdateShelf }) => {
+const SearchBooks = () => {
   const [query, setQuery] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [searchedBooks, setSearchedBooks] = useState([]);
+  const { books, onUpdateShelf } = useContext(BooksContext);
 
   const mergeSearchResultWithBooks = searchResults =>
     searchResults.map(res => {
@@ -69,22 +70,6 @@ const SearchBooks = ({ books, onUpdateShelf }) => {
       </div>
     </div>
   );
-};
-
-SearchBooks.propTypes = {
-  onUpdateShelf: PropTypes.func.isRequired,
-  books: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      title: PropTypes.string.isRequired,
-      authors: PropTypes.arrayOf(PropTypes.string),
-      shelf: PropTypes.string,
-      imageLinks: PropTypes.shape({
-        thumbnail: PropTypes.string,
-        smallThumbnail: PropTypes.string
-      })
-    }).isRequired
-  ).isRequired
 };
 
 export default SearchBooks;

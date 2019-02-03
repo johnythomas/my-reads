@@ -4,6 +4,7 @@ import * as BooksAPI from "./BooksAPI";
 import ListShelves from "./components/ListShelves";
 import SearchBooks from "./components/SearchBooks";
 import NotFound from "./components/NotFound";
+import BooksContext from "./context";
 import "./App.css";
 
 const BooksApp = () => {
@@ -34,27 +35,15 @@ const BooksApp = () => {
 
   return (
     <div className="app">
-      <Switch>
-        <Route
-          exact
-          path="/"
-          render={() => (
-            <ListShelves
-              onUpdateShelf={updateShelf}
-              books={books}
-              isLoading={isLoading}
-            />
-          )}
-        />
-        <Route
-          exact
-          path="/search"
-          render={() => (
-            <SearchBooks onUpdateShelf={updateShelf} books={books} />
-          )}
-        />
-        <Route component={NotFound} />
-      </Switch>
+      <BooksContext.Provider
+        value={{ books, isLoading, onUpdateShelf: updateShelf }}
+      >
+        <Switch>
+          <Route exact path="/" component={ListShelves} />
+          <Route exact path="/search" component={SearchBooks} />
+          <Route component={NotFound} />
+        </Switch>
+      </BooksContext.Provider>
     </div>
   );
 };
